@@ -18,14 +18,13 @@ To build and compare different models for accurate flower species classification
 ## ⚙️ **Implemented Models**
 
 - **CNN:** A standard convolutional neural network for end-to-end feature learning and classification.
-- **SVM-ResNet50 (Hybrid):** Uses a pre-trained ResNet50 for feature extraction and an SVM for classification.
-- **Random Forest:** Ensemble method for classification with decision trees.
-- **Decision Tree:** Simple and interpretable tree-based model.
+- **SVM-ResNet50 (Hybrid):** Uses a pre-trained ResNet50 for feature extraction and an SVM for classification. Images were pre-processed using Color Histograms and HOG (Histogram of Oriented Gradients) to capture unique shape and edge features for distinguishing the flowers.
+- **Random Forest:** Random Forest improves flower classification by combining handcrafted features (color histograms) and CNN-extracted features for better accuracy.
+- **Decision Tree:** Simple and interpretable tree-based model. Used color histograms, texture (LBP), shape (Hu moments), and petal count from edge detection.
 
 ## 📈 **Key Findings**
 
 - The **SVM-ResNet50 Hybrid** achieved the highest accuracy of **0.88**, showing the benefit of combining deep feature extraction with robust classifiers.
-- Traditional models like Random Forest and Decision Tree serve as interpretable baselines.
 
 ## 👩‍💻 **Authors**
 

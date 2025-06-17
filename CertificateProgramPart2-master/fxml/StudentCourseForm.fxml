@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="StudentCourseFormController">
+   <children>
+      <BorderPane layoutX="212.0" layoutY="108.0" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: #e1f1fd;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <left>
+            <AnchorPane prefHeight="600.0" prefWidth="200.0" style="-fx-background-color: #c1d8f0;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="43.0" layoutY="261.0" prefHeight="17.0" prefWidth="119.0" text="Welcome, " textAlignment="CENTER">
+                     <font>
+                        <Font name="Segoe Fluent Icons" size="14.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="viewCourseBtn" layoutX="51.0" layoutY="313.0" mnemonicParsing="false" onAction="#switchToStudentPage" prefHeight="30.0" prefWidth="100.0" text="View All Course" />
+                  <Button fx:id="planCourseBtn" layoutX="52.0" layoutY="368.0" mnemonicParsing="false" onAction="#switchToPlanPage" prefHeight="30.0" prefWidth="92.0" text="Plan Course" />
+                  <ImageView fx:id="profile" fitHeight="131.0" fitWidth="142.0" layoutX="30.0" layoutY="105.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Picture/profile.png" />
+                     </image>
+                  </ImageView>
+                  <Text fx:id="studentName" layoutX="104.0" layoutY="276.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="87.9999771118164" />
+               </children>
+            </AnchorPane>
+         </left>
+         <center>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <TableView fx:id="courseTableView" layoutX="92.0" layoutY="122.0" prefHeight="311.0" prefWidth="664.0">
+                    <columns>
+                      <TableColumn fx:id="idCol" prefWidth="75.0" text="ID" />
+                      <TableColumn fx:id="creditCol" prefWidth="90.4000244140625" text="CreditHour" />
+                        <TableColumn fx:id="lecturerCol" prefWidth="186.39996337890625" text="Lecturer" />
+                        <TableColumn fx:id="reqCol" prefWidth="172.88885498046875" text="Requirements" />
+                        <TableColumn fx:id="noteCol" prefWidth="137.77777099609375" text="Note" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+      <Button fx:id="signOutBtn" layoutX="76.0" layoutY="556.0" mnemonicParsing="false" onAction="#signOut" text="Sign Out" />
+   </children>
+</AnchorPane>

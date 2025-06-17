@@ -1,0 +1,8 @@
+CS113,3,Aristotle, Nil,-
+CS123,3,Newton, Nil,-
+CS133,3,Ada Lovelace, Nil,-
+CS143,3,Alan Turing, Nil,-
+CS214,4,Neoh Kee Lin, CS113,-
+CS224,4,KC Lee, CS123,-
+CS234,4,Wong Ya Ping, Nil,-
+CS316,6, Albert Einstein, CS133 CS214,minimum 15 credits
